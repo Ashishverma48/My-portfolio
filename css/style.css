@@ -1,0 +1,384 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cookie&family=Great+Vibes&family=Roboto:wght@400;500&family=Satisfy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size:3vw;
+    font-weight: 500;
+}
+h2{
+    font-size: 3vw;
+    font-weight: 500;
+}
+ul{
+    list-style: none;
+}
+p{
+    font-size: 1.6vw;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+/* NAV START */
+
+.home-nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(104, 103, 103, 0.174);
+    backdrop-filter: blur(10px); */
+    align-items: center;
+    padding:.3rem 6rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+    z-index: 99;
+    
+    
+}
+.nav-scroll{
+    background-color: rgba(20, 19, 19, 0.247);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+#toggle{
+    position: absolute;
+    right: 2rem;
+    display: none;
+    font-size: 2rem;
+    color: #6f1ebb;
+}
+
+
+.nav-links{
+    display: flex;
+    gap: 3rem;
+    
+}
+.nav-links a{
+    font-size: 1.2rem;
+   color: rgba(255, 255, 255, 0.779);
+    position: relative;
+    padding-block: .4rem;
+}
+.nav-links button{
+    padding: .5rem 1.7rem;
+    background-color: #5b3a79c0;
+    border: 0;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+.nav-links button:hover{
+    transform: translateY(-1.8px);
+    background-color:#8b44a8;
+}
+.home-nav h1{
+    font-size: 3rem;
+    font-weight: 700;
+    background-image: linear-gradient(to left,rgb(142, 10, 198),rgb(188, 4, 4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .2s;
+}
+.home-nav h1:hover{
+    text-shadow: 1px 1px 2px  wheat ;
+}
+.nav-links a::after{
+    position:absolute;
+    content: "";
+    border: 0px solid #6f1ebb;
+    bottom: 0;
+    
+    width: 0;
+    display: block;
+    border-radius: 10px;
+    left: 0;
+    transition: width .3s;
+   
+   
+    
+}
+.nav-links a:hover::after{
+    width: 100%;
+    border-width: 2px;
+   
+   
+}
+
+/* NAV END */
+
+/* INTRO SECTION START */
+
+.intro{
+    height: 130vh;
+    width: 100%;
+    background-image: url(../img/home-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: top;
+    background-color: rgba(0, 0, 0, 0.655);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+   padding-inline:  8REM;
+    display: flex;
+    width: 100%;
+    /* height: fit-content; */
+    /* border: 2px  solid  #6f1ebb; */
+}
+.intro-main>div{
+    width: 50%;
+}
+.intro-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-right>img{
+    width: 80%;
+}
+.intro-left{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.intro-left h1{
+    color: white;
+}
+.intro-left h1>span{
+    color: #8b44a8;
+}
+#typing-txt{
+    color: #8b44a8;
+    border-right: 3px solid #8b44a8 ;
+    width: fit-content;
+    padding-right: 1rem;
+    
+}
+
+/* INTRO SECTION END */
+
+/* INTRO ABOUT ME START */
+
+
+.introduction{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:
+    #171026;
+}
+.introduction>div{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}
+.about-me{
+    display: flex;
+    justify-content: space-between;
+}
+.introduction-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* text-align: center; */
+    color: white;
+}
+.introduction-left span{
+    color: #8b44a8;
+    font-style: italic;
+}
+.introduction-left h2{
+    text-align: center;
+}
+.introduction-left h2>span{
+    color: #8b44a8;
+    font-style: normal;
+    
+}
+
+.social-link{
+color: white;
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 1.3rem;
+}
+.social-link>div{
+    display: flex;
+    justify-content: space-around;
+}
+.social-link span{
+    color: #6f1ebb;
+}
+.social-link i{
+    /* display: block; */
+    height: 44PX;
+    width: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: #6f1ebb;
+    font-size: 1.3rem;
+    transition: .2s;
+}
+.social-link i:hover{
+    box-shadow:#6f1ebb 0px 0px 25px;
+    border: 1px solid #6f1ebb;
+}
+
+
+/* FOOTER START */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    background-color: #0a0416;
+    color: white;
+}
+footer i{
+    margin-right: 1rem;
+    color: white;
+}
+footer i:hover{
+    transform: scale(1.2);
+}
+footer p{
+    font-weight: 400;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px){
+   h1{
+    font-size: 4vw;
+   }
+    h2{
+    font-size: 5vw;
+   }
+   p{
+    font-size: 3vw;
+   }
+   .container{
+    padding-inline:5rem ;
+   }
+    .nav-links{
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 50rem;
+        text-align: center;
+        gap:2rem;
+        background-color:#171026;
+        width: 100%;
+        padding: 1rem;
+        transition: .5s;
+
+    }
+   .nav-links.active{
+    right: 0;
+   }
+    #toggle{
+        display: block;
+    }
+    /* INTRO SECTION START */
+    .intro{
+        height: 160vh;
+        background-size: cover;
+    }
+    .intro-main{
+        flex-direction: column;
+    }
+    .intro-main>div{
+        width: 100%;
+    }
+
+    
+/* INTRO ABOUT ME START */
+    .introduction{
+  height: 250vh;
+  background-color: #261245;
+    } 
+    .about-me{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .about-me>div{
+        width: 100%;
+    }
+    .introduction-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    /* FOOTER  */
+    footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+}
+
+
+@media screen and (max-width: 480px){
+    h1{
+        font-size: 6vw;
+    }
+    h2{
+        font-size: 6vw;
+    }
+    p{
+        font-size: 4.5vw;
+    }
+    .container{
+        padding-inline: 1rem;
+    }
+    .home-nav{
+        padding: .3rem 1rem;
+    }
+    .intro{
+        height: 90vh;
+        padding-top: 10rem;
+    }
+    .intro-right{
+        margin-top: 1rem;
+    }
+
+    /* INTODUCTION SECTION */
+    .introduction{
+        height: 140vh;
+    }
+    .social-link>div{
+        gap: 1rem;
+    }
+}
+
