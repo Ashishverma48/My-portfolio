@@ -71,7 +71,7 @@ button{
 }
 .nav-links a{
     font-size: 1.2rem;
-   color: rgba(255, 255, 255, 0.779);
+   color: rgba(255, 255, 255, 0.877);
     position: relative;
     padding-block: .4rem;
 }
@@ -299,12 +299,13 @@ footer p{
         gap:2rem;
         background-color:#171026;
         width: 100%;
-        padding: 1rem;
+        padding: 2rem 1rem;
         transition: .5s;
 
     }
    .nav-links.active{
     right: 0;
+    transform: rotate(360deg);
    }
     #toggle{
         display: block;
