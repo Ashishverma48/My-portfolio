@@ -28,6 +28,9 @@ p{
 a{
     text-decoration: none;
 }
+button{
+    cursor: pointer;
+}
 /* NAV START */
 
 .home-nav{

@@ -68,7 +68,7 @@ a{
 .home-nav ul{
     display: flex;
     gap: 3rem;
-    
+
 }
 .nav-links a{
     font-size: 1.2rem;
@@ -203,12 +203,12 @@ width: 100%;
     border-radius: 5px;
     background-color: #2923225b;
     transition: .4s ease-in-out;
-    box-shadow: 0 0 16px 2px #bd6be4;
+    box-shadow: 0px 3px 5px #bd6be4;
     padding: .6rem;
 }
 .skill>div:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 20px 1px #bd6be4;
+    transform: scale(1.04);
+    box-shadow: 0 0 15px 1px #bd6be4;
 }
 .skill img{
     width: 90px;
@@ -503,6 +503,9 @@ footer p{
     h2{
         font-size: 9vw;
     }
+    h3{
+        font-size: 4vw;
+    }
     p{
         font-size: 4vw;
     }
@@ -512,15 +515,28 @@ footer p{
     h4{
         font-size: 3.5vw;
     }
-    .about-me{
-        height: 100vh;
-    }
+   
     .home-nav{
+        
         padding: .4rem 1rem;
+    }
+    .about-main{
+        margin-top: 8rem;
     }
     .about-main>:nth-child(1){
         
         line-height: 1.5rem;
+    }
+    .contact-detail{
+        height: 130vh;
+    }
+    .contact-number{
+        gap: 1rem;
+    }
+    .edu-left i{
+        height: 40px;
+        width: 40px;
+        font-size: 1.1rem;
     }
     .skill>div{
         width: 35%;

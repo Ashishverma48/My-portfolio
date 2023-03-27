@@ -1,0 +1,38 @@
+
+
+.resume-main{
+    padding: 5rem 0;
+    background-color: #1b151c;
+}
+
+.resume{
+    flex-direction: column;
+align-items: center;
+gap: 2rem;
+}
+.resume img{
+    width: 100%;
+}
+.resume button{
+    padding: .5rem 3rem;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-weight: 500;
+    transition: .2s ease-in;
+    background-color: #623686 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.resume button:hover{
+    background-color: #933ed8d7 ;
+}
+
+
+@media screen and (max-width:480px) {
+    .resume{
+        padding-top: 3rem;
+    }
+}
