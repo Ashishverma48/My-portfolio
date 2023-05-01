@@ -294,7 +294,7 @@ footer p{
         flex-direction: column;
         position: absolute;
         top: 4rem;
-        right: 50rem;
+        right: 30rem;
         text-align: center;
         gap:2rem;
         background-color:#171026;
@@ -305,7 +305,7 @@ footer p{
     }
    .nav-links.active{
     right: 0;
-    transform: rotate(360deg);
+    
    }
     #toggle{
         display: block;
